@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+
 body{
     margin: 0;
     display: grid;
@@ -6,27 +8,70 @@ body{
                          "section section aside aside"
                          "div div div div"
                          "footer footer footer footer";
-    grid-template-rows: 20vh 10vh 60vh 10vh 20vh;                 grid-template-columns: 10vw 40vw 20vw 30vw;
+    grid-template-rows: 35vh 10vh 60vh 10vh 20vh;                 grid-template-columns: 10vw 40vw 20vw 30vw;
 }     
 
 header{
     grid-area: header;
-    background-color: blue;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img{
+    height: 80px;
+    width: auto;
+    transition-duration: 1s;
+}
+
+header img:hover{
+    height: 100px;
+    transition-duration: 1s;
+}
+
+header h1 {
+    color: yellow;
+    text-transform: uppercase;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+header h1:hover {
+    color: brown;
 }
 
 nav {
     grid-area: nav;
-    background-color: red;
+    background-color: blue;
 }
 
 section {
     grid-area: section;
     background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+    width: 300px;
+    height: auto;
+    transition-duration: 0.75s;
+}
+
+section img:hover{
+    width: 350px;
+    opacity: 0.5;
+    transition-duration: 0.75s;
 }
 
 aside {
     grid-area: aside;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div {
